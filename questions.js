@@ -1,0 +1,107 @@
+/* Arabic and English question banks captured from the reference site's public questions feed. */
+window.questionBanks = {
+  female: [
+    ["9", "ما الذي يسعد userName؟ 🥹", ["الطعام 🍕", "المديح 💕", "المال 💸", "التسوق 🛍️", "النوم 😴", "النميمة ☕"]],
+    ["95", "ما الكرتون المفضل لدى userName؟ 📺", ["سبونج بوب سكوير بانتس 🧽", "عالم غامبول المدهش 🐱", "ميراكولوس: الدعسوقة والقط الأسود 🐞", "أبطال التايتنز انطلقوا! 🦸", "ناروتو 🍥", "بوكيمون ⚡", "العرض العادي 🐦", "وقت المغامرة 🗡️", "توم وجيري 🐭", "بن 10 ⌚"]],
+    ["24", "متى كانت userName تذاكر للامتحانات عادةً؟ 📝", ["قبل الامتحان بأيام 📚", "في الليلة السابقة 🌙", "قبل الامتحان بـ5 دقائق 😭", "لم تكن تذاكر 💀"]],
+    ["97", "ما كانت لعبة userName المفضلة في طفولتها؟ 🛝", ["الغميضة 🫣", "القفز بالحبل 🪢", "الحجلة 🟦", "اسم، حيوان، نبات، جماد، بلد ✏️", "إكس أو ❌", "أونو 🃏", "لودو 🎲", "اللعب بالبيت 🏠"]],
+    ["11", "ما أكثر شيء تكرهه userName؟ 😤", ["أن يطلق أحدهم الريح 💨", "البثور 🔴", "التلاعب بمشاعرها 🥺", "الكذب 🤥", "الأصدقاء المزيفون 🎭", "إخلاف الوعود 😕", "الواجبات المدرسية 📚", "الامتحانات 📑"]],
+    ["99", "أي حلوى تختار userName عادةً؟ 🍬", ["كادبوري ديري ميلك 🍫", "ويفر كاتا كيتو 🧇", "تشوبا تشوبس 🍭", "منتوس 🍬", "علكة شيكلتس 🫧", "دببة الجيلي 🐻", "توفي بالفواكه 🍓", "مارشميلو ☁️"]],
+    ["457", "ما أكثر ما يخيف userName؟ 😨", ["الحقن 💉", "الأفعوانيات 🎢"]],
+    ["10", "ما عادة userName السيئة؟ 😬", ["نسيان كلمات المرور 🔐", "التفكير الزائد في كل شيء 🧠", "السهر لوقت متأخر جدًا 🌙", "التسوق أكثر من اللازم 🛍️", "التمرير على الهاتف باستمرار 📱", "تناول الكثير من الوجبات الخفيفة 🍫", "النوم أكثر من اللازم 😴", "قضم الأظافر 😬", "مضغ الأقلام 🖊️"]],
+    ["101", "ما الحلوى المفضلة لدى userName؟ 🍰", ["آيس كريم 🍨", "كنافة 🥮", "بسبوسة 🍯", "أم علي 🥣", "أرز بالحليب 🍚", "تشيز كيك 🍰", "وافل 🧇", "إكلير 🥐"]],
+    ["28", "كم تستخدم userName من الكاتشب؟ 🥫", ["لا تستخدمه إطلاقًا 🚫", "تغمره بالكاتشب 🍅"]],
+    ["103", "ما الوجبة السريعة المفضلة لدى userName؟ 🍔", ["برغر 🍔", "شاورما 🌯", "كشري 🍲", "بيتزا 🍕", "دجاج مقلي 🍗", "كريب مالح 🥞", "حواوشي 🥙", "ساندويتش طعمية 🧆"]],
+    ["34", "كيف ترسل userName الرسائل عادةً؟ 📱", ["رسائل كثيرة متتالية 💬", "رسالة واحدة طويلة 📝"]],
+    ["30", "كيف تحمل userName حقيبة الظهر عادةً؟ 🎒", ["على الكتفين 🎒", "على كتف واحد 😎"]],
+    ["26", "ماذا تفعل userName بحافة البيتزا؟ 🍕", ["تأكلها 😋", "تتركها 🙅"]],
+    ["7", "كم من الوقت تقضي userName على هاتفها في الحمام؟ 🚽", ["5 دقائق كحد أقصى ⏱️", "حتى تتخدر ساقاها 🦵"]],
+    ["18", "في أي وضعية تنام userName عادةً؟ 💤", ["على جانبها 😴", "على بطنها 🛏️", "على ظهرها 😌"]],
+    ["12", "أين بدأت أول قصة حب لـ userName؟ 💘", ["في المدرسة 🏫", "في الجامعة 🎓", "على مواقع التواصل 📱", "عن طريق أصدقاء مشتركين 🫶", "في حفلة أو فعالية 🎉", "ما زالت عزباء 😅"]],
+    ["8", "ما الأصوات التي تصدرها userName أثناء نومها؟ 😴", ["لا تصدر أي صوت 😇", "تشخر 🚂", "تتحدث أثناء نومها 💬", "تضحك فجأة 😂"]],
+    ["32", "إلى أي درجة تتحمل userName الطعام الحار؟ 🌶️", ["غير حار إطلاقًا 😌", "حار إلى حد كبير 🔥"]],
+    ["22", "كيف تأكل userName عادةً؟ 🍽️", ["بسرعة كبيرة ⚡", "ببطء شديد 🐢"]],
+    ["15", "أين كانت userName تجلس عادةً في الصف؟ 🏫", ["في الأمام 🥇", "في الخلف 😎"]],
+    ["1", "ما تسريحة الشعر المثالية لـ userName؟ 💇‍♀️", ["تموجات ناعمة 🎀", "شعر أملس ومستقيم 🫧", "تجعيدات 🌸", "ذيل حصان عالٍ 🐴", "مشبك شعر 🦋", "تسريحة بلو آوت ✨", "ضفائر 🩰", "كعكة منخفضة 🌷"]],
+    ["3", "ما طول الأظافر الذي تفضّله userName؟ 💅", ["قصيرة 💅", "متوسطة 💅", "طويلة 💎", "طويلة جدًا 🫧"]],
+    ["20", "كم منبّهًا تحتاج userName لتستيقظ؟ ⏰", ["منبّه واحد فقط ⏰", "2–3 منبّهات ⏰", "تؤجّل المنبّه مرارًا 💤", "لا تحتاج إلى منبّه 😎"]],
+    ["2", "ما إطلالة الشفاه المفضلة لدى userName؟ 💄", ["لامعة 💧", "مطفية 💋", "ملونة بخفة 🍓", "نيود 🤎"]],
+    ["5", "ما اللون الذي تحب userName ارتداءه أكثر؟ 🎨", ["أسود 🖤", "أبيض 🤍", "رمادي 🩶", "بني 🤎", "وردي 🎀", "أحمر ❤️", "برتقالي 🧡", "أصفر 💛", "أخضر 💚", "أخضر مريمي 🌿", "أزرق 🩵", "بنفسجي 💜", "لافندر 🪻", "أزرق مخضر 🩵", "بيج 🪵", "عنابي 🍒"]],
+    ["4", "أي قصة جينز تختار userName عادةً؟ 👖", ["باغي 👖", "مستقيم 🩵", "واسع من الأسفل ✨", "سكيني 🩵"]]
+  ],
+  male: [
+    ["13", "على ماذا ينفق userName معظم ماله؟ 💸", ["وجبات خفيفة / طعام 🍔", "ملابس / أحذية 👟", "ألعاب 🎮", "تقنية / ملحقات 🎧", "الخروج مع الأصدقاء 👫", "لا شيء — يدخره 💰"]],
+    ["96", "ما الكرتون المفضل لدى userName؟ 📺", ["سبونج بوب سكوير بانتس 🧽", "عالم غامبول المدهش 🐱", "ميراكولوس: مغامرات الدعسوقة والقط الأسود 🐞", "أبطال التايتنز انطلقوا! 🦸", "ناروتو 🍥", "بوكيمون ⚡", "العرض العادي 🐦", "وقت المغامرة 🗡️", "توم وجيري 🐭", "بن 10 ⌚"]],
+    ["33", "كيف يرسل userName رسائله عادةً؟ 📱", ["رسائل كثيرة متتالية 💬", "رسالة واحدة طويلة 📝"]],
+    ["98", "ما كانت لعبة userName المفضلة في طفولته؟ 🛝", ["كرة القدم ⚽", "الغميضة 🫣", "الشرطة واللصوص 🚓", "اسم، حيوان، نبات، جماد، بلد ✏️", "إكس أو ❌", "أونو 🃏", "لودو 🎲", "البلي 🔵"]],
+    ["16", "أين كان userName يجلس عادةً في الصف؟ 🏫", ["في الأمام 🥇", "في الخلف 😎"]],
+    ["100", "أي حلوى يختار userName عادةً؟ 🍬", ["كادبوري ديري ميلك 🍫", "ويفر كاتا كيتو 🧇", "تشوبا تشوبس 🍭", "منتوس 🍬", "علكة شيكلتس 🫧", "حلوى الدببة الجيلاتينية 🐻", "توفي بالفواكه 🍓", "مارشميلو ☁️"]],
+    ["458", "ما أكثر شيء يخيف userName؟ 😨", ["الحقن 💉", "الأفعوانية 🎢"]],
+    ["23", "متى كان userName يذاكر للامتحانات عادةً؟ 📝", ["قبلها بعدة أيام 📚", "في الليلة السابقة 🌙", "قبلها بـ5 دقائق 😭", "ما كان يذاكر 💀"]],
+    ["102", "ما الحلوى المفضلة لدى userName؟ 🍰", ["آيس كريم 🍨", "كنافة 🥮", "بسبوسة 🍯", "أم علي 🥣", "أرز بالحليب 🍚", "تشيز كيك 🍰", "وافل 🧇", "إكلير 🥐"]],
+    ["17", "في أي وضعية ينام userName عادةً؟ 💤", ["على جانبه 😴", "على بطنه 🛏️", "على ظهره 😌"]],
+    ["104", "ما الوجبة السريعة المفضلة لدى userName؟ 🍔", ["برغر 🍔", "شاورما 🌯", "كشري 🍲", "بيتزا 🍕", "دجاج مقلي 🍗", "كريب مالح 🥞", "حواوشي 🥙", "ساندويتش طعمية 🧆"]],
+    ["29", "كيف يحمل userName حقيبة الظهر عادةً؟ 🎒", ["بالحزامين 🎒", "بحزام واحد 😎"]],
+    ["25", "ماذا يفعل userName بحافة البيتزا؟ 🍕", ["يأكلها 😋", "يتركها 🙅"]],
+    ["19", "كم منبّهًا يحتاج userName ليستيقظ؟ ⏰", ["منبّه واحد ⏰", "2–3 منبّهات ⏰", "يؤجّل المنبّه باستمرار 💤", "لا يحتاج إلى منبّه 😎"]],
+    ["21", "بأي سرعة يأكل userName عادةً؟ 🍽️", ["بسرعة كبيرة ⚡", "ببطء شديد 🐢"]],
+    ["27", "كم يضع userName من الكاتشب؟ 🥫", ["لا يضعه أبداً 🚫", "كمية كبيرة 🍅"]],
+    ["31", "إلى أي حد يتحمل userName الطعام الحار؟ 🌶️", ["غير حار إطلاقًا 😌", "حار إلى حد كبير 🔥"]]
+  ]
+};
+
+// English prompts from the reference site's public questions feed.
+window.questionBanks.ar = {
+  female: window.questionBanks.female,
+  male: window.questionBanks.male
+};
+window.questionBanks.en = {
+  female: [
+    ["9", "What makes userName happy? 🥹", ["Food 🍕", "Compliments 💕", "Money 💸", "Shopping 🛍️", "Sleeping 😴", "Gossip ☕"]],
+    ["95", "What's userName's favorite cartoon? 📺", ["SpongeBob SquarePants 🧽", "The Amazing World of Gumball 🐱", "Miraculous: Tales of Ladybug & Cat Noir 🐞", "Teen Titans Go! 🦸", "Naruto 🍥", "Pokémon ⚡", "Regular Show 🐦", "Adventure Time 🗡️", "Tom and Jerry 🐭", "Ben 10 ⌚"]],
+    ["24", "When did userName usually study for exams? 📝", ["Days in advance 📚", "The night before 🌙", "5 minutes before 😭", "Didn't study 💀"]],
+    ["97", "What was userName's favorite childhood game? 🛝", ["Hide-and-seek 🫣", "Jump rope 🪢", "Hopscotch 🟦", "Name, Animal, Plant, Object, Country ✏️", "Tic-tac-toe ❌", "UNO 🃏", "Ludo 🎲", "Playing house 🏠"]],
+    ["11", "What does userName hate the most? 😤", ["Someone farting 💨", "Pimples 🔴", "Someone playing with her feelings 🥺", "Lying 🤥", "Fake friends 🎭", "Broken promises 😕", "Homework 📚", "Exams 📑"]],
+    ["99", "Which sweet treat does userName usually pick? 🍬", ["Cadbury Dairy Milk 🍫", "Kata Kito Wafer 🧇", "Chupa Chups 🍭", "Mentos 🍬", "Chiclets gum 🫧", "Gummy bears 🐻", "Fruit toffee 🍓", "Marshmallows ☁️"]],
+    ["457", "What is userName most scared of? 😨", ["Injections 💉", "Roller coasters 🎢"]],
+    ["10", "What's userName's bad habit? 😬", ["Forgetting passwords 🔐", "Overthinking everything 🧠", "Staying up too late 🌙", "Shopping too much 🛍️", "Scrolling on her phone 📱", "Eating too many snacks 🍫", "Sleeping too much 😴", "Biting her nails 😬", "Chewing on pens 🖊️"]],
+    ["101", "What's userName's favorite dessert? 🍰", ["Ice cream 🍨", "Kunafa 🥮", "Basbousa 🍯", "Om Ali 🥣", "Rice pudding 🍚", "Cheesecake 🍰", "Waffles 🧇", "Eclair 🥐"]],
+    ["28", "How much ketchup does userName use? 🥫", ["None 🚫", "Loads it with ketchup 🍅"]],
+    ["103", "What's userName's favorite fast food? 🍔", ["Burger 🍔", "Shawarma 🌯", "Koshary 🍲", "Pizza 🍕", "Fried chicken 🍗", "Savory crepe 🥞", "Hawawshi 🥙", "Falafel sandwich 🧆"]],
+    ["34", "How does userName usually text? 📱", ["Lots of messages in a row 💬", "One long message 📝"]],
+    ["30", "How does userName usually wear a backpack? 🎒", ["Both straps 🎒", "One strap 😎"]],
+    ["26", "What does userName do with the pizza crust? 🍕", ["Eats it 😋", "Leaves it 🙅"]],
+    ["7", "How long does userName spend on her phone in the bathroom? 🚽", ["5 minutes max ⏱️", "Until her legs go numb 🦵"]],
+    ["18", "What position does userName usually sleep in? 💤", ["On her side 😴", "On her stomach 🛏️", "On her back 😌"]],
+    ["12", "Where did userName's first romance begin? 💘", ["At school 🏫", "In college 🎓", "On social media 📱", "Through mutual friends 🫶", "At a party or event 🎉", "Still single 😅"]],
+    ["8", "What sounds does userName make in her sleep? 😴", ["Completely silent 😇", "Snores 🚂", "Talks in her sleep 💬", "Suddenly laughs 😂"]],
+    ["32", "How much spice can userName handle? 🌶️", ["No spice 😌", "Pretty spicy 🔥"]],
+    ["22", "How fast does userName usually eat? 🍽️", ["Super fast ⚡", "Really slow 🐢"]],
+    ["15", "Where did userName usually sit in class? 🏫", ["Front 🥇", "Back 😎"]],
+    ["1", "What's userName's ideal hairstyle? 💇‍♀️", ["Soft waves 🎀", "Sleek and straight 🫧", "Curls 🌸", "High ponytail 🐴", "Claw clip 🦋", "Blowout ✨", "Braids 🩰", "Low bun 🌷"]],
+    ["3", "What nail length does userName like best? 💅", ["Short 💅", "Medium 💅", "Long 💎", "Extra long 🫧"]],
+    ["20", "How many alarms does userName need to wake up? ⏰", ["Just one ⏰", "2–3 alarms ⏰", "Keeps hitting snooze 💤", "Doesn't need an alarm 😎"]],
+    ["2", "What's userName's favorite lip look? 💄", ["Glossy 💧", "Matte 💋", "Tinted 🍓", "Nude 🤎"]],
+    ["5", "What color does userName love wearing most? 🎨", ["Black 🖤", "White 🤍", "Grey 🩶", "Brown 🤎", "Pink 🎀", "Red ❤️", "Orange 🧡", "Yellow 💛", "Green 💚", "Sage green 🌿", "Blue 🩵", "Purple 💜", "Lavender 🪻", "Teal 🩵", "Beige 🪵", "Burgundy 🍒"]],
+    ["4", "What style of jeans does userName usually go for? 👖", ["Baggy 👖", "Straight 🩵", "Flared ✨", "Skinny 🩵"]]
+  ],
+  male: [
+    ["13", "What does userName spend most of his money on? 💸", ["Snacks / food 🍔", "Clothes / shoes 👟", "Games 🎮", "Tech / accessories 🎧", "Going out with friends 👫", "Nothing — he saves it 💰"]],
+    ["96", "What's userName's favorite cartoon? 📺", ["SpongeBob SquarePants 🧽", "The Amazing World of Gumball 🐱", "Miraculous: Tales of Ladybug & Cat Noir 🐞", "Teen Titans Go! 🦸", "Naruto 🍥", "Pokémon ⚡", "Regular Show 🐦", "Adventure Time 🗡️", "Tom and Jerry 🐭", "Ben 10 ⌚"]],
+    ["33", "How does userName usually text? 📱", ["Lots of messages in a row 💬", "One long message 📝"]],
+    ["98", "What was userName's favorite childhood game? 🛝", ["Football ⚽", "Hide-and-seek 🫣", "Cops and robbers 🚓", "Name, Animal, Plant, Object, Country ✏️", "Tic-tac-toe ❌", "UNO 🃏", "Ludo 🎲", "Marbles 🔵"]],
+    ["16", "Where did userName usually sit in class? 🏫", ["Front 🥇", "Back 😎"]],
+    ["100", "Which sweet treat does userName usually pick? 🍬", ["Cadbury Dairy Milk 🍫", "Kata Kito Wafer 🧇", "Chupa Chups 🍭", "Mentos 🍬", "Chiclets gum 🫧", "Gummy bears 🐻", "Fruit toffee 🍓", "Marshmallows ☁️"]],
+    ["458", "What is userName most scared of? 😨", ["Injections 💉", "Roller coasters 🎢"]],
+    ["23", "When did userName usually study for exams? 📝", ["Days in advance 📚", "The night before 🌙", "5 minutes before 😭", "Didn't study 💀"]],
+    ["102", "What's userName's favorite dessert? 🍰", ["Ice cream 🍨", "Kunafa 🥮", "Basbousa 🍯", "Om Ali 🥣", "Rice pudding 🍚", "Cheesecake 🍰", "Waffles 🧇", "Eclair 🥐"]],
+    ["17", "What position does userName usually sleep in? 💤", ["On his side 😴", "On his stomach 🛏️", "On his back 😌"]],
+    ["104", "What's userName's favorite fast food? 🍔", ["Burger 🍔", "Shawarma 🌯", "Koshary 🍲", "Pizza 🍕", "Fried chicken 🍗", "Savory crepe 🥞", "Hawawshi 🥙", "Falafel sandwich 🧆"]],
+    ["29", "How does userName usually wear a backpack? 🎒", ["Both straps 🎒", "One strap 😎"]],
+    ["25", "What does userName do with the pizza crust? 🍕", ["Eats it 😋", "Leaves it 🙅"]],
+    ["19", "How many alarms does userName need to wake up? ⏰", ["Just one ⏰", "2–3 alarms ⏰", "Keeps hitting snooze 💤", "Doesn't need one 😎"]],
+    ["21", "How fast does userName usually eat? 🍽️", ["Super fast ⚡", "Really slow 🐢"]],
+    ["27", "How much ketchup does userName use? 🥫", ["None 🚫", "Loads of ketchup 🍅"]],
+    ["31", "How much spice can userName handle? 🌶️", ["No spice 😌", "Pretty spicy 🔥"]]
+  ]
+};
