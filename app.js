@@ -82,7 +82,13 @@
   const t = (ns, key) => rawT(state.language, ns, key);
   const isAr = () => state.language === "ar";
   const imageQuestionId = (item) => (item.id === "96" ? "95" : item.id);
-  const uid = () => (crypto.randomUUID ? crypto.randomUUID().replace(/-/g, "").slice(0, 8) : Math.random().toString(36).slice(2, 10));
+  const uid = () => {
+    if (crypto.randomUUID) return crypto.randomUUID().replace(/-/g, "").slice(0, 12);
+    return (Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2)).slice(0, 12);
+  };
+  const expiredMessage = () => (isAr()
+    ? "انتهت صلاحية هذا الرابط (24 ساعة) وتم حذفه نهائياً"
+    : "This quiz link expired after 24 hours and was permanently deleted");
 
   function currentLanguageDisplay() {
     const found = LANGUAGES.find((l) => l.code === state.displayLangCode);
@@ -1941,11 +1947,18 @@
       createdAt: new Date().toISOString(),
       responses: []
     };
-    state.quiz = await window.quizStore.save(quiz);
-    window.quizStore.setActiveCreatorQuizId(quiz.id);
-    state.creatingCompleted = true;
-    state.creatingSelected = null;
-    render();
+    try {
+      state.quiz = await window.quizStore.save(quiz);
+      window.quizStore.setActiveCreatorQuizId(state.quiz.id);
+      state.creatingCompleted = true;
+      state.creatingSelected = null;
+      render();
+    } catch (err) {
+      console.error("[finishOwnerQuiz]", err);
+      state.creatingSelected = null;
+      render();
+      showToast(isAr() ? "تعذر حفظ الاختبار الآن، حاول مرة أخرى" : "Could not save quiz right now, please try again");
+    }
   }
 
   async function finishPlayerQuiz() {
@@ -1960,12 +1973,23 @@
       score,
       createdAt: new Date().toISOString()
     };
-    const updatedQuiz = await window.quizStore.addResponse(quiz.id, response);
-    state.playerQuiz = updatedQuiz || quiz;
-    if (state.quiz && state.quiz.id === quiz.id) state.quiz = state.playerQuiz;
-    state.playerResponse = response;
-    window.quizStore.setPlayerSubmission(quiz.id, response.id);
-    navigate("playerCompleted");
+    try {
+      const updatedQuiz = await window.quizStore.addResponse(quiz.id, response);
+      if (!updatedQuiz) {
+        state.playerQuiz = null;
+        navigate("home", { replace: true, noRedirect: true });
+        showToast(expiredMessage());
+        return;
+      }
+      state.playerQuiz = updatedQuiz;
+      if (state.quiz && state.quiz.id === quiz.id) state.quiz = state.playerQuiz;
+      state.playerResponse = response;
+      window.quizStore.setPlayerSubmission(quiz.id, response.id);
+      navigate("playerCompleted");
+    } catch (err) {
+      console.error("[finishPlayerQuiz]", err);
+      showToast(isAr() ? "تعذر إرسال النتيجة، حاول مرة أخرى" : "Could not submit score, please try again");
+    }
   }
 
   /* =========================================================================
@@ -2108,7 +2132,14 @@
       }
     } else if (action === "go-scoreboard") {
       if (state.quiz) {
-        state.quiz = (await window.quizStore.get(state.quiz.id)) || state.quiz;
+        const refreshed = await window.quizStore.get(state.quiz.id);
+        if (!refreshed) {
+          state.quiz = null;
+          navigate("home", { replace: true, noRedirect: true });
+          showToast(expiredMessage());
+          return;
+        }
+        state.quiz = refreshed;
       }
       navigate("userScoreboard");
     } else if (action === "view-answers") {
@@ -2268,6 +2299,7 @@
       const quiz = await window.quizStore.get(quizId);
       if (!quiz) {
         navigate("home", { replace: true, noRedirect: true });
+        showToast(expiredMessage());
         return;
       }
       state.playerQuiz = quiz;
@@ -2366,6 +2398,18 @@
   window.addEventListener("popstate", () => {
     resolveCurrentUrl();
   });
+
+  // Auto-expire active creator session if left open past the 24-hour window
+  window.setInterval(async () => {
+    if (!state.quiz || !window.quizStore.isExpired?.(state.quiz)) return;
+    const expiredId = state.quiz.id;
+    state.quiz = null;
+    await window.quizStore.get(expiredId);
+    if (["userShare", "userScoreboard", "userAnswers"].includes(state.route)) {
+      navigate("home", { replace: true, noRedirect: true });
+      showToast(expiredMessage());
+    }
+  }, 60000);
 
   resolveCurrentUrl();
 })();
